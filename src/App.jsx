@@ -6,12 +6,14 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Thanks from "./pages/Thanks";
+import ScrollToTop from "./components/ScrollToTop";
 import "font-awesome/css/font-awesome.min.css";
 import "./App.css";
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <div className="content">
         <Navbar />
         <div className="main">

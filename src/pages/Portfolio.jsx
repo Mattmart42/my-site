@@ -1,15 +1,23 @@
 import React from 'react';
-import VideoComponent from '../components/Video';
+import NuttyJumpVideo from '../components/NuttyJumpVideo';
+import SHMACKVideo from '../components/SHMACKVideo';
 import './Portfolio.css';
 
 // Import images
 import arrow from '../assets/icons/arrow.svg';
+import shmack1 from '../assets/images/shmack1.png';
+import shmack2 from '../assets/images/shmack2.png';
+import shmack4 from '../assets/images/shmack4.png';
+import shmack5 from '../assets/images/shmack5.png';
 import nuttyJump1 from '../assets/images/nutty-jump1.png';
 import nuttyJump2 from '../assets/images/nutty-jump2.png';
+import nuttyJump4 from '../assets/images/nutty-jump4.png';
+import nuttyJump5 from '../assets/images/nutty-jump5.png';
 import momentm1 from '../assets/images/momentm1.png';
 import momentm2 from '../assets/images/momentm2.png';
 import momentm4 from '../assets/images/momentm4.png';
 import momentm5 from '../assets/images/momentm5.png';
+import musicClassifier from '../assets/images/musicClassifier.png';
 import pacman from '../assets/images/pacman.png';
 import budgetlyly1 from '../assets/images/budgetlyly1.png';
 import budgetlyly2 from '../assets/images/budgetlyly2.png';
@@ -20,13 +28,48 @@ import site from '../assets/images/site.png';
 const Portfolio = () => {
   return (
     <div className="portfolio-container">
-      <div className="portfolio-header">
+      {/* <div className="portfolio-header">
         <h1>My Works</h1>
         <div 
           className="scroll-down-button" 
           onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
         >
           <img src={arrow} alt="arrow" />
+        </div>
+      </div> */}
+      <div className="portfolio-card">
+        <div className="portfolio-card-content">
+          <div className="portfolio-card-detail">
+            <h3>SHMACK</h3>
+            <h4>Swift | Google Firebase | Apple Music API | Figma</h4>
+            <p>SHMACK is a social music sharing app for IOS that allows
+              users to share and discover music with friends. Built with 
+              Swift, Google Firebase, and the Apple Music API, SHMACK 
+              offers a seamless and engaging user experience. Custom 
+              designs were created in Figma to ensure a visually appealing
+              interface.
+            </p>
+            <p>
+              Learn more about SHMACK <a href="https://shmack-beta-invite.lovable.app">here.</a>
+            </p>
+          </div>
+          <div className="portfolio-card-media">
+            <div className="shmack-images">
+              <div className="shmack-container">
+                <img className="shmack" src={shmack1} alt="shmack1" />
+              </div>
+              <div className="shmack-container">
+                <img className="shmack" src={shmack2} alt="shmack2" />
+              </div>
+              <SHMACKVideo />
+              <div className="shmack-container">
+                <img className="shmack" src={shmack4} alt="shmack4" />
+              </div>
+              <div className="shmack-container">
+                <img className="shmack" src={shmack5} alt="shmack5" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -49,9 +92,19 @@ const Portfolio = () => {
           </div>
           <div className="portfolio-card-media">
             <div className="nutty-jump-images">
-              <img className="nutty" src={nuttyJump1} alt="nuttyjump1" />
-              <VideoComponent />
-              <img className="nutty" src={nuttyJump2} alt="nuttyjump2" />
+              <div className="nutty-container">
+                <img className="nutty" src={nuttyJump1} alt="nuttyjump1" /> 
+              </div>
+              <div className="nutty-container">
+                <img className="nutty" src={nuttyJump2} alt="nuttyjump2" /> 
+              </div>
+              <NuttyJumpVideo />
+              <div className="nutty-container">
+                <img className="nutty" src={nuttyJump4} alt="nuttyjump4" /> 
+              </div>
+              <div className="nutty-container">
+                <img className="nutty" src={nuttyJump5} alt="nuttyjump5" /> 
+              </div>
             </div>
           </div>
         </div>
@@ -60,11 +113,11 @@ const Portfolio = () => {
       <div className="portfolio-card">
         <div className="portfolio-card-content">
           <div className="portfolio-card-detail">
-            <h3>Momentm</h3>
+            <h3>MomentM</h3>
             <h4>Swift | Google Firebase | Spotify Web API</h4>
             <p>An IOS fitness application designed with an emphasis
               on community. Written in Swift with the support of 
-              Google Firebase and the Spotify Web API. Momentm is 
+              Google Firebase and the Spotify Web API. MomentM is 
               for athletes of all levels who want to connect with
               other athletes and improve their fitness.
             </p>
@@ -74,6 +127,24 @@ const Portfolio = () => {
             <img className="image" src={momentm1} alt="momentm1" />
             <img className="image" src={momentm4} alt="momentm4" />
             <img className="image" src={momentm5} alt="momentm5" />
+          </div>
+        </div>
+      </div>
+
+      <div className="portfolio-card">
+        <div className="portfolio-card-content">
+          <div className="portfolio-card-detail">
+            <h3>AI Music Classification Engine</h3>
+            <h4>Python | TensorFlow | Keras</h4>
+            <p>A Convolutional Neural Network trained to distinguish 
+              between human-composed and AI-generated music samples, 
+              achieving 92% test accuracy. Powered by a data ingestion 
+              pipeline that acquires audio data from diverse sources and 
+              preprocesses raw files into spectrograms for model training.
+            </p>
+          </div>
+          <div className="portfolio-card-media">
+            <img className="musicClassifier" src={musicClassifier} alt="musicClassifier" />
           </div>
         </div>
       </div>

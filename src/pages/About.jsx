@@ -21,6 +21,9 @@ import xcodeIcon from "../assets/icons/xcode.svg";
 import figmaIcon from "../assets/icons/figma.svg";
 import postmanIcon from "../assets/icons/postman.svg";
 import unityIcon from "../assets/icons/unity.svg";
+import nodejsIcon from "../assets/icons/nodejs.svg";
+import dockerIcon from "../assets/icons/docker.svg";
+import sqlIcon from "../assets/icons/sql.svg";
 import lmuLogo from "../assets/images/lmu-logo.png";
 import profileImage from "../assets/images/profile.png";
 
@@ -85,7 +88,12 @@ const Experience = () => {
       <h2>Experience</h2>
       <div className="exp-container">
         <div className="exp-subcontainer">
-          <h5>Oct 2024 - Present</h5>
+          <h5>May 2025 - Present</h5>
+          <h3>Founding Software Engineer</h3>
+          <h4>SHMACK</h4>
+        </div>
+        <div className="exp-subcontainer">
+          <h5>Oct 2024 - January 2025</h5>
           <h3>Software Engineer Intern</h3>
           <h4>HYEL</h4>
         </div>
@@ -100,9 +108,14 @@ const Experience = () => {
           <h4>Dottwav</h4>
         </div>
         <div className="exp-subcontainer">
-          <h5>Oct 2024 - Present</h5>
-          <h3>Mathematics Tutor</h3>
-          <h4>LMU Academic Resource Center</h4>
+          <h5>August 2021 - May 2025</h5>
+          <h3>NCAA Division I Athlete & Team Captain</h3>
+          <h4>LMU Men's Cross Country and Track</h4>
+        </div>
+        <div className="exp-subcontainer">
+          <h5>August 2025 - Present</h5>
+          <h3>Computer Science Tutor</h3>
+          <h4>LMU Athletics</h4>
         </div>
       </div>
     </div>
@@ -114,6 +127,7 @@ const Skills = () => {
     <div className="expanded-content">
       <h2>Skills</h2>
       <div className="skills-container">
+
         <h3>Languages</h3>
         <div className="skills-subcontainer">
           <div className="skill-card">
@@ -129,6 +143,14 @@ const Skills = () => {
             <h4>Java</h4>
           </div>
           <div className="skill-card">
+            <img className="skill-image" src={swiftIcon} alt="swift" />
+            <h4>Swift</h4>
+          </div>
+          <div className="skill-card">
+            <img className="skill-image" src={cSharpIcon} alt="c-sharp" />
+            <h4>C#</h4>
+          </div>
+          <div className="skill-card">
             <img className="skill-image" src={html5Icon} alt="html5" />
             <h4>HTML5</h4>
           </div>
@@ -137,20 +159,13 @@ const Skills = () => {
             <h4>CSS3</h4>
           </div>
           <div className="skill-card">
-            <img className="skill-image" src={swiftIcon} alt="swift" />
-            <h4>Swift</h4>
-          </div>
-          <div className="skill-card">
-            <img className="skill-image" src={cSharpIcon} alt="c-sharp" />
-            <h4>C#</h4>
+            <img className="skill-image" src={sqlIcon} alt="sql" />
+            <h4>SQL</h4>
           </div>
         </div>
-        <h3>Frameworks</h3>
+
+        <h3>Frameworks | Engines | Platforms</h3>
         <div className="skills-subcontainer">
-          <div className="skill-card">
-            <img className="skill-image" src={gitIcon} alt="git" />
-            <h4>Git</h4>
-          </div>
           <div className="skill-card">
             <img className="skill-image" src={reactIcon} alt="react" />
             <h4>React</h4>
@@ -160,8 +175,8 @@ const Skills = () => {
             <h4>Vite</h4>
           </div>
           <div className="skill-card">
-            <img className="skill-image" src={mongodbIcon} alt="mongodb" />
-            <h4>MongoDB</h4>
+            <img className="skill-image" src={unityIcon} alt="unity" />
+            <h4>Unity</h4>
           </div>
           <div className="skill-card">
             <img className="skill-image" src={gameIcon} alt="game" />
@@ -171,12 +186,29 @@ const Skills = () => {
             <img className="skill-image" src={gameIcon} alt="game" />
             <h4>GameplayKit</h4>
           </div>
-        </div>
-        <h3>Tools</h3>
-        <div className="skills-subcontainer">
           <div className="skill-card">
             <img className="skill-image" src={firebaseIcon} alt="firebase" />
             <h4>Firebase</h4>
+          </div>
+          <div className="skill-card">
+            <img className="skill-image" src={mongodbIcon} alt="mongodb" />
+            <h4>MongoDB</h4>
+          </div>
+          <div className="skill-card">
+            <img className="skill-image" src={nodejsIcon} alt="nodejs" />
+            <h4>Node.js</h4>
+          </div>
+          <div className="skill-card">
+            <img className="skill-image" src={dockerIcon} alt="docker" />
+            <h4>Docker</h4>
+          </div>
+        </div>
+
+        <h3>Tools & Technologies</h3>
+        <div className="skills-subcontainer">
+          <div className="skill-card">
+            <img className="skill-image" src={gitIcon} alt="git" />
+            <h4>Git</h4>
           </div>
           <div className="skill-card">
             <img className="skill-image" src={vscodeIcon} alt="visual-studio" />
@@ -194,10 +226,6 @@ const Skills = () => {
             <img className="skill-image" src={postmanIcon} alt="postman" />
             <h4>Postman</h4>
           </div>
-          <div className="skill-card">
-            <img className="skill-image" src={unityIcon} alt="unity" />
-            <h4>Unity</h4>
-          </div>
         </div>
       </div>
     </div>
@@ -210,7 +238,27 @@ const Education = () => {
       <h2>Education</h2>
       <div className="ed-container">
         <div className="ed-detail-container">
-          <h4>Bachelor of Computer Science</h4>
+          <h4>Master of Science | Computer Science</h4>
+          <h5>Loyola Marymount University</h5>
+          <h6>May 2026</h6>
+        </div>
+        <div className="logo-container">
+          <img className="lmu-logo" src={lmuLogo} alt="lmu-logo" />
+        </div>
+      </div>
+      <div className="ed-container">
+        <div className="ed-detail-container">
+          <h4>Bachelor of Science | Computer Science</h4>
+          <h5>Loyola Marymount University</h5>
+          <h6>May 2025</h6>
+        </div>
+        <div className="logo-container">
+          <img className="lmu-logo" src={lmuLogo} alt="lmu-logo" />
+        </div>
+      </div>
+      <div className="ed-container">
+        <div className="ed-detail-container">
+          <h4>Entrepreneurship Certification</h4>
           <h5>Loyola Marymount University</h5>
           <h6>May 2025</h6>
         </div>

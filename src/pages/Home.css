@@ -3,7 +3,7 @@
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-  padding-top: 10rem;
+  padding-top: 12rem;
   animation: fadeIn 1.5s ease-in-out;
   height: 50vh;
 }
@@ -14,12 +14,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem;
+  padding: 0.5rem;
   height: 20%;
 }
 
 .home-container h1 {
-  font-size: 7vw;
+  font-size: clamp(2.0rem, 7vw, 20rem);
   letter-spacing: 5px;
   animation: colorChange 6s infinite;
   margin: 0;
@@ -29,6 +29,7 @@
   letter-spacing: 5px;
   margin: 0;
   padding: .1rem;
+  font-size: clamp(.75rem, 1.5vw, 3rem);
 }
 
 .explorer-button {

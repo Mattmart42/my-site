@@ -18,7 +18,7 @@
 }
 
 .portfolio-header h1 {
-  font-size: 7vw;
+  font-size: clamp(2.5rem, 3vw, 4.0rem);
   letter-spacing: 5px;
   animation: colorChange 6s infinite;
 }
@@ -26,7 +26,7 @@
 .portfolio-card {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 80%;
   align-items: center;
   justify-content: center;
   border: 10px solid #6c6c6c;
@@ -87,6 +87,10 @@
   .portfolio-card-media > * {
     flex-basis: 100%; /* Full width on smaller screens */
   }
+
+  .portfolio-card {
+    width: 90%; /* Full width on smaller screens */
+  }
 }
 
 .portfolio-card a {
@@ -121,12 +125,21 @@
   clip-path: inset(0 round 20px);
 }
 
-.video {
+.nutty-jump-video {
   text-align: center;
   margin: 0 auto;
   max-width: 100%;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.shmack-video {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;
   overflow: hidden;
 }
 
@@ -135,9 +148,11 @@ video {
   max-width: 250px;
   min-width: 150px;
   clip-path: inset(0 round 20px);
+  border: 4px solid #ffffff;
+  border-radius: 20px;
 }
 
-.budgetlyly, .pacman, .site, .mode, .portal {
+.budgetlyly, .pacman, .site, .mode, .portal, .musicClassifier {
   max-width: 100%;
   min-width: 120px;
   clip-path: inset(0 round 10px);
@@ -149,10 +164,19 @@ video {
   min-width: 100px;
 }
 
-.nutty {
-  width: 100%;
+.nutty-container {
+  text-align: center;
+  margin: 0 auto;
   max-width: 200px;
+  margin: 0 auto;
+  padding: 0.2rem;
+  overflow: hidden;
+}
+
+.nutty {
   height: auto;
+  width: 100%;
+  max-width: 250px;
   min-width: 100px;
   clip-path: inset(0 round 20px);
 }
@@ -162,6 +186,28 @@ video {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-left: 1rem;
-  padding-right: 1rem;
+}
+
+.shmack-container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 0.2rem;
+  overflow: hidden;
+}
+
+.shmack {
+  height: auto;
+  width: 100%;
+  max-width: 250px;
+  min-width: 100px;
+  clip-path: inset(0 round 20px);
+}
+
+.shmack-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
