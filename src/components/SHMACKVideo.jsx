@@ -1,5 +1,5 @@
 import React from "react";
-import shmackVideo from "../assets/images/shmack-video.mp4";
+import shmackVideo from "../assets/images/shmack-video-small.mp4";
 import shmackPoster from "../assets/images/shmack3.png";
 
 const SHMACKVideo = () => {
